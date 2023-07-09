@@ -5,7 +5,7 @@ import Create from './components/Create';
 import Dashboard from './components/Dashboard';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
     <Routes>
 
       <Route path="/create" exact element={ <Create/> }  />
